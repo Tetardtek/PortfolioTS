@@ -1,16 +1,27 @@
 import React from "react";
+import { Translations } from "@/lib/translations";
+// import { Locale } from "@/i18n.config";
+// import { translate } from "utils";
 
 interface MyLinkProps {
-  showText: boolean;
   showImage: boolean;
+  showText: boolean;
   showFooter: boolean;
+  text: Translations["landing"];
+  // params: { lang: Locale };
 }
 
-export default function MyLink({
-  showText,
-  showImage,
-  showFooter,
-}: MyLinkProps) {
+export default async function MyLink(
+  { showText, showImage, showFooter }: MyLinkProps,
+  text: Translations["landing"]
+  // {
+  //   params: { lang },
+  // }: {
+  //   params: { lang: Locale };
+  // }
+) {
+  // const text = await translate(lang, "landing");
+
   return (
     <div>
       {showImage && (
@@ -41,17 +52,17 @@ export default function MyLink({
           </a>
         </div>
       )}
+
       {showText && (
         <div className="text-white">
-          &nbsp; &nbsp; Here is my portfolio, I am a web developer and I am
-          looking for a job.
+          &nbsp; &nbsp; {text?.DESC_1}
           <br />
-          Here you can find my projects and the technologies I use.
+          {text?.DESC_2}
           <br />
           <br />
-          &nbsp; If you want to contact me, you can do it.
+          &nbsp; {text?.DESC_3}
           <br />
-          I will be happy to answer and work with you.
+          {text?.DESC_4}
           <br />
           <br />
         </div>

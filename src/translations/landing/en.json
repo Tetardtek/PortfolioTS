@@ -1,5 +1,13 @@
 {
-  "HOME": "Home",
-  "HOME_PAGE": "Home page",
-  "LANGUAGE": "FR"
+  "DESC_1": "Here is my portfolio, I am a web developer and I am looking for a job.",
+  "DESC_2": "Here you can find my projects and the technologies I use.",
+  "DESC_3": "If you want to contact me, you can do it.",
+  "DESC_4": "I will be happy to answer and work with you.",
+  "PROJECT": "Here is some of my projects",
+  "PROJECT_1": "Project 1 description",
+  "PROJECT_2": "Project 2 description",
+  "PROJECT_3": "Project 3 description",
+  "HACK1": "Hackathon 1 description",
+  "HACK2": "Hackathon 2 description",
+  "TECHNOLOGIES": "Technologies"
 }

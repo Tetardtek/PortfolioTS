@@ -1,5 +1,13 @@
 {
-  "HOME": "Accueil",
-  "HOME_PAGE": "Page d'Accueil",
-  "LANGUAGE": "EN"
+  "DESC_1": "Voici mon portfolio, je suis un développeur web Fullstack à la recherche d'un emploi.",
+  "DESC_2": "Vous pouvez trouver ici mes projets et les technologies que j'utilise.",
+  "DESC_3": "Si vous souhaitez me contacter, n'hésitez pas.",
+  "DESC_4": "Je serai ravi de répondre et de travailler avec vous.",
+  "PROJECT": "Voici quelques-uns de mes projets",
+  "PROJECT_1": "Description du projet 1",
+  "PROJECT_2": "Description du projet 2",
+  "PROJECT_3": "Description du projet 3",
+  "HACK1": "Description du hackathon 1",
+  "HACK2": "Description du hackathon 2",
+  "TECHNOLOGIES": "Technologies"
 }
