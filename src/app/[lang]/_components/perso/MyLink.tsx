@@ -1,27 +1,16 @@
-import React from "react";
-import { Translations } from "@/lib/translations";
-// import { Locale } from "@/i18n.config";
-// import { translate } from "utils";
-
 interface MyLinkProps {
   showImage: boolean;
   showText: boolean;
   showFooter: boolean;
-  text: Translations["landing"];
-  // params: { lang: Locale };
+  text: { DESC_1: string; DESC_2: string; DESC_3: string; DESC_4: string };
 }
 
-export default async function MyLink(
-  { showText, showImage, showFooter }: MyLinkProps,
-  text: Translations["landing"]
-  // {
-  //   params: { lang },
-  // }: {
-  //   params: { lang: Locale };
-  // }
-) {
-  // const text = await translate(lang, "landing");
-
+export default async function MyLink({
+  showText,
+  showImage,
+  showFooter,
+  text,
+}: MyLinkProps) {
   return (
     <div>
       {showImage && (

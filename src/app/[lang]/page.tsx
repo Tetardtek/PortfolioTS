@@ -1,5 +1,4 @@
 import { type ParamsProps, translate } from "utils";
-import { Locale } from "@/i18n.config";
 
 // Mes composants
 import MyLink from "@components/perso/MyLink";
@@ -7,12 +6,8 @@ import MyLink from "@components/perso/MyLink";
 // Mes images
 import headerImage from "@public/png/HEADER.png";
 
-export default async function Home({
-  params: { lang },
-}: {
-  params: { lang: Locale };
-}) {
-  const text = await translate(lang, "landing");
+export default async function Home(props: ParamsProps) {
+  const text = await translate(props.params.lang, "landing");
 
   return (
     <>
@@ -22,6 +17,8 @@ export default async function Home({
           <MyLink showImage showText showFooter={false} text={text} />
           {/* insert project // insert technologies */}
           <MyLink showImage showText={false} showFooter text={text} />
+          {/* <div className="bg-white">{text.DESC_1}</div> */}
+          <p>test</p>
         </div>
       </main>
     </>
