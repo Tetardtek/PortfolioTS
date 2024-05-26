@@ -2,7 +2,16 @@ interface MyLinkProps {
   showImage: boolean;
   showText: boolean;
   showFooter: boolean;
-  text: { DESC_1: string; DESC_2: string; DESC_3: string; DESC_4: string };
+  text?: {
+    DESC_1: string;
+    DESC_2: string;
+    DESC_3: string;
+    DESC_4: string;
+    FOOT_1: string;
+    FOOT_2: string;
+    FOOT_3: string;
+    FOOT_4: string;
+  };
 }
 
 export default async function MyLink({
@@ -63,15 +72,15 @@ export default async function MyLink({
             &nbsp; Kevin Turnaco &nbsp;
             <br />
             <br />
-            &nbsp; Download{" "}
+            &nbsp; {text?.FOOT_1}{" "}
             <a href="" download>
-              my CV here
+              {text?.FOOT_2}
             </a>{" "}
             &nbsp;
             <br />
             <br />
-            &nbsp; or contact me{" "}
-            <a href="mailto:kvnn64@gmail.com">at this address</a> &nbsp;
+            &nbsp; {text?.FOOT_3}{" "}
+            <a href="mailto:kvnn64@gmail.com">{text?.FOOT_4}</a> &nbsp;
           </div>
         </footer>
       )}

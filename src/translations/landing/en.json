@@ -9,5 +9,9 @@
   "PROJECT_3": "Project 3 description",
   "HACK1": "Hackathon 1 description",
   "HACK2": "Hackathon 2 description",
-  "TECHNOLOGIES": "Technologies"
+  "TECHNOLOGIES": "Technologies",
+  "FOOT_1" : "Download",
+  "FOOT_2" : "my CV here",
+  "FOOT_3" : "or contact me",
+  "FOOT_4" : "at this email"
 }
